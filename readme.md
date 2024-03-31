@@ -5,6 +5,8 @@
     - Backend
       - init npm "npm init -y"
       - intall express command "npm i express cors dotenv mongodb mongoose"
+       - src
+        - index.ts 
       -
     - Frontend
 
@@ -54,3 +56,6 @@
   - @types/express: TypeScript type definitions for Express.js.
   - @types/cors: TypeScript type definitions for the CORS package.
   - @types/node: TypeScript type definitions for Node.js core modules.
+
+- npx tsc --init
+    -`npx tsc --init` initializes TypeScript setup by creating a default configuration file named `tsconfig.json`.
