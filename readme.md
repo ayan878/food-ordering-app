@@ -65,3 +65,5 @@
   - tailwindcss: This is the main Tailwind CSS package, which provides utility classes for styling HTML elements.
   - postcss: PostCSS is a tool for transforming CSS with JavaScript plugins. Tailwind CSS uses PostCSS for processing its CSS files.
   - autoprefixer: Autoprefixer is a PostCSS plugin that automatically adds vendor prefixes to CSS rules, ensuring compatibility with different browsers.
+ - Created mongoDB and connect to MOngoDB database
+   - user:admin password mongoDb : HolhiHvN7YWcwc71
