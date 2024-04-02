@@ -59,3 +59,9 @@
 
 - npx tsc --init
     -`npx tsc --init` initializes TypeScript setup by creating a default configuration file named `tsconfig.json`.
+
+- npm install -D tailwindcss postcss autoprefixer
+   - D: This flag is used to specify that the packages should be installed as devDependencies, which means they are only required for development purposes and not in production.
+  - tailwindcss: This is the main Tailwind CSS package, which provides utility classes for styling HTML elements.
+  - postcss: PostCSS is a tool for transforming CSS with JavaScript plugins. Tailwind CSS uses PostCSS for processing its CSS files.
+  - autoprefixer: Autoprefixer is a PostCSS plugin that automatically adds vendor prefixes to CSS rules, ensuring compatibility with different browsers.
