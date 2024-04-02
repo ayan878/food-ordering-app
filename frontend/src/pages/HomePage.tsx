@@ -1,8 +1,10 @@
 import landingImage from "../assets/landing.png";
 import appDownloadImage from "../assets/appDownload.png";
+import Hero from "@/components/Hero";
 function HomePage() {
   return (
     <div className="flex flex-col gap-12">
+      <Hero />
       <div className="bg-white rounded-md shadow-lg py-8 flex flex-col gap-5 text-center -mt-16">
         <h1 className="text=5xl font-bold tracking-tighter text-orange-600">
           Tuck into take away today
