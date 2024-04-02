@@ -6,6 +6,8 @@
       - init npm "npm init -y"
       - intall express command "npm i express cors dotenv mongodb mongoose"
        - src
+         - Model
+          - User Schema
         - index.ts 
       -
     - 
