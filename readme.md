@@ -2,20 +2,22 @@
 
 - Create folder
   - Food Ordering App
-    - Backend (MongoDb, auth0)
+    - Backend (MongoDb)
       - init npm "npm init -y"
       - intall express command "npm i express cors dotenv mongodb mongoose"
        - src
         - index.ts 
       -
-    - Auth0
+    - 
 
-    - Frontend (using shadcn UI & Lucide icon )
+    - Frontend (using shadcn UI,Lucide icons &auth0 )
       - Header
         - Mobile Nav
         - DeskTop Nva
       - Hero
       - Footer
+      - Auth0
+
 
 <!--! Theory-->
 
