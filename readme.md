@@ -52,7 +52,6 @@
   - mongoose: Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a higher-level abstraction for interacting with MongoDB databases, allowing developers to define schemas, models, and relationships between data. Mongoose simplifies tasks such as defining schemas, performing CRUD operations, data validation, and more, making it easier to work with MongoDB in Node.js applications.
 
 - npm i ts-node typescript nodemon
-
   - ts-node: ts-node is a TypeScript execution environment for Node.js, allowing you to run TypeScript files directly without the need for precompilation. It compiles TypeScript code on-the-fly and executes it within Node.js.
 
   - typescript: This package provides the TypeScript compiler, which is used to transpile TypeScript code into JavaScript. It allows you to write code in TypeScript and then compile it into JavaScript, which can be executed by Node.js or in the browser.
