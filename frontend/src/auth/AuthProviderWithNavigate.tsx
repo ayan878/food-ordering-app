@@ -1,4 +1,3 @@
-
 import { useCreateMyUser } from "@/api/MyUserApi";
 import { Auth0Provider, AppState, User } from "@auth0/auth0-react";
 
@@ -22,8 +21,9 @@ const Auth0ProviderWithNavigate = ({ children }: Props) => {
   const onRedirectCallback = (appState: AppState, user: User) => {
     console.log(user);
     if (user?.sub && user?.email) {
+      console.log(user?.sub);
       console.log("success");
-      createUser({ auth0Id: user.sub, email: user.email });
+      createUser({ auth0id: user.sub, email: user.email });
     }
   };
 
@@ -31,7 +31,7 @@ const Auth0ProviderWithNavigate = ({ children }: Props) => {
     <Auth0Provider
       domain={domain}
       clientId={clientId}
-      redirectUri={redirectUri}
+      authorizationParams={{ redirect_uri: redirectUri }}
       onRedirectCallback={onRedirectCallback}
     >
       {children}
