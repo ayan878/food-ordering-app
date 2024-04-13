@@ -6,9 +6,14 @@
       - init npm "npm init -y"
       - intall express command "npm i express cors dotenv mongodb mongoose"
        - src
+         - Routes
+           - MyuserRoutes.
          - Model
-          - User Schema
+           - User Schema
+        
         - index.ts 
+        - Midddleware
+          - auth.ts
       -
     - 
 
