@@ -1,4 +1,4 @@
-import { Auth0Provider, AppState, User } from "@auth0/auth0-react";
+import { AppState, Auth0Provider, User } from "@auth0/auth0-react";
 import { useNavigate } from "react-router-dom";
 
 type Props = {
@@ -6,31 +6,29 @@ type Props = {
 };
 
 const Auth0ProviderWithNavigate = ({ children }: Props) => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  const {
-    VITE_AUTH0_DOMAIN: domain,
-    VITE_AUTH0_CLIENT_ID: clientId,
-    VITE_AUTH0_CALLBACK_URL: redirectUri,
-  } = import.meta.env;
+  const domain = import.meta.env.VITE_AUTH0_DOMAIN;
+  const clientId = import.meta.env.VITE_AUTH0_CLIENT_ID;
+  const redirectUri = import.meta.env.VITE_AUTH0_CALLBACK_URL;
+ 
 
-  if (!domain || !clientId || !redirectUri) {
-    throw new Error("Unable to initialize auth");
+  if (!domain || !clientId || !redirectUri ) {
+    throw new Error("unable to initialise auth");
   }
 
-  const onRedirectCallback = (appState?: AppState, user?: User) => {
-    try {
-      // navigate("/auth-callback");
-    } catch (error) {
-      console.error("Error navigating:", error);
-    }
+  const onRedirectCallback = (appState?: AppState,user?:User) => {
+    navigate("/auth-callback");
   };
 
   return (
     <Auth0Provider
       domain={domain}
       clientId={clientId}
-      authorizationParams={{ redirect_uri: redirectUri }}
+      authorizationParams={{
+        redirect_uri: redirectUri,
+    
+      }}
       onRedirectCallback={onRedirectCallback}
     >
       {children}
