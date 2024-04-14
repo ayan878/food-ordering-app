@@ -12,8 +12,9 @@
            - User Schema
         
         - index.ts 
-        - Midddleware
+        - Midddleware(update User profile API,)
           - auth.ts
+          - validation
       -
     - 
 
