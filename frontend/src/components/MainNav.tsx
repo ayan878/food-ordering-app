@@ -15,7 +15,7 @@ function MainNav() {
             className="font-bold hover:text-orange-500 hover:bg-white"
             onClick={async () => await loginWithRedirect()}
           >
-            Login In
+            Log In
           </Button>
         )}
       </span>
