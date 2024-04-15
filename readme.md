@@ -25,6 +25,7 @@
       - Hero
       - Footer
       - Auth0
+      - User Profile Form
 
 
 <!--! Theory-->
