@@ -7,6 +7,7 @@ import {
   FormField,
   FormItem,
   FormLabel,
+  FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -62,8 +63,9 @@ function UserProfileForm({ onSave, isLoading }: Props) {
           <FormItem>
             <FormLabel>Name</FormLabel>
             <FormControl>
-              <Input {...field} disabled className="bg-white" />
+              <Input {...field} className="bg-white" />
             </FormControl>
+            <FormMessage/>
           </FormItem>
         )}
       />
@@ -72,11 +74,12 @@ function UserProfileForm({ onSave, isLoading }: Props) {
           control={form.control}
           name="addressLine1"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="flex-1">
               <FormLabel>addressLine1</FormLabel>
               <FormControl>
-                <Input {...field} disabled className="bg-white" />
+                <Input {...field}  className="bg-white" />
               </FormControl>
+              <FormMessage/>
             </FormItem>
           )}
         />
@@ -84,11 +87,12 @@ function UserProfileForm({ onSave, isLoading }: Props) {
           control={form.control}
           name="city"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="flex-1">
               <FormLabel>City</FormLabel>
               <FormControl>
                 <Input {...field} disabled className="bg-white" />
               </FormControl>
+              <FormMessage/>
             </FormItem>
           )}
         />
@@ -96,11 +100,12 @@ function UserProfileForm({ onSave, isLoading }: Props) {
           control={form.control}
           name="country"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="flex-1">
               <FormLabel>Countary</FormLabel>
               <FormControl>
                 <Input {...field} disabled className="bg-white" />
               </FormControl>
+              <FormMessage/>
             </FormItem>
           )}
         />
