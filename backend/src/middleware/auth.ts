@@ -7,7 +7,7 @@ declare global {
   namespace Express {
     interface Request {
       userId: string;
-      auth0Id: string;
+      auth0id: string;
     }
   }
 }
@@ -34,15 +34,15 @@ export const jwtParse = async (
 
   try {
     const decoded = jwt.decode(token) as jwt.JwtPayload;
-    const auth0Id = decoded.sub;
+    const auth0id = decoded.sub;
 
-    const user = await User.findOne({ auth0Id });
+    const user = await User.findOne({ auth0id });
 
     if (!user) {
       return res.sendStatus(401);
     }
 
-    req.auth0Id = auth0Id as string;
+    req.auth0id = auth0id as string;
     req.userId = user._id.toString();
     next();
   } catch (error) {
