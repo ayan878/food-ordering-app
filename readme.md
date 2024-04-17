@@ -26,6 +26,7 @@
       - Footer
       - Auth0
       - User Profile Form
+        - Success Toast(Shadcn Sooner)
 
 
 <!--! Theory-->
